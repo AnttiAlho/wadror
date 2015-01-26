@@ -1,0 +1,20 @@
+
+<p id="notice"><%= notice %></p>
+
+<h1>List on Ratings</h1>
+
+<table>
+
+  <tbody>
+  	<ul>
+ 		<% @ratings.each do |rating| %>
+   		<li> <%= rating %> </li>
+ 		<% end %>
+	</ul>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'breweries', breweries_path %>
+<%= link_to 'New Beer', new_beer_path %>
