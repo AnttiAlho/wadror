@@ -15,6 +15,7 @@
   <%= @beer.brewery_id %>
 </p>
 
+<<<<<<< HEAD:Ratebeer/app/views/beers/show.html.erb
 <% if @beer.ratings.empty? %>
   beer has not yet been rated!
 <% else %>
@@ -22,6 +23,18 @@
 <% end %>
 
 <br>
+=======
+<p>
+<% if @beer.ratings.empty? %>
+ beer has not yet been rated!
+<% else %>
+ <%="This beer has #{@beer.ratings.count} ratings, average #{@beer.average_rating} score"%>
+<% end %>
+</p>
+
+<p><%= "rating".pluralize(@beer.ratings.count) %></p>
+
+>>>>>>> 48ab198bc07410012bbddf4aa0b0b1ad15e94f82:ratebeer/app/views/beers/show.html.erb
 
 <%= link_to 'Edit', edit_beer_path(@beer) %> |
 <%= link_to 'Back', beers_path %>

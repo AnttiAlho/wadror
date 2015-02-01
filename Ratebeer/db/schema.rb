@@ -11,7 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
+<<<<<<< HEAD:Ratebeer/db/schema.rb
 ActiveRecord::Schema.define(version: 20150201210605) do
+=======
+ActiveRecord::Schema.define(version: 20150125203649) do
+>>>>>>> 48ab198bc07410012bbddf4aa0b0b1ad15e94f82:ratebeer/db/schema.rb
 
   create_table "beers", force: true do |t|
     t.string   "name"
@@ -41,6 +45,13 @@ ActiveRecord::Schema.define(version: 20150201210605) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "password_digest"
+  end
+
+  create_table "ratings", force: :cascade do |t|
+    t.integer  "score"
+    t.integer  "beer_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

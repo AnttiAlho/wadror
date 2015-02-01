@@ -13,7 +13,10 @@
  *= require_tree .
  *= require_self
  */
+<<<<<<< HEAD:Ratebeer/app/assets/stylesheets/application.css
 
+=======
+>>>>>>> 48ab198bc07410012bbddf4aa0b0b1ad15e94f82:ratebeer/app/assets/stylesheets/application.css
 .navibar {
     padding: 10px;
     background: #EFEFEF;

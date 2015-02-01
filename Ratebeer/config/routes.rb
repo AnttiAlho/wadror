@@ -1,5 +1,14 @@
 Rails.application.routes.draw do
+
   resources :users
+
+  
+  get '/', to: 'breweries#index'
+
+  get 'kaikki_bisset', to: 'beers#index'
+
+  get 'ratings', to: 'ratings#index'
+
 
   resources :beers
 
